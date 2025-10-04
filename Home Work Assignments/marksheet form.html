@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Bihar School of Board</title>
+ <style>
+    /* Basic reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Times New Roman", Georgia, serif; }
+
+    body {
+      background: #f3efe6;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .marksheet {
+      width: 900px;
+      border: 6px solid #b79a63;              /* outer frame */
+      background: #fffdf7;
+      padding: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #d8c8a2;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    .board-title {
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    .sub-title {
+      font-size: 13px;
+      margin-top: 6px;
+      color: #333;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      margin: 14px 6px;
+      font-size: 13px;
+    }
+
+    .meta .left, .meta .right { display:flex; gap:12px; align-items:center; }
+
+    label.small { font-weight:600; font-size:12px; margin-right:6px; }
+
+    /* Table style */
+    table.marks {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    table.marks th, table.marks td {
+      border: 1px solid #bfae86;
+      padding: 8px 6px;
+      text-align: center;
+    }
+
+    table.marks th {
+      background: linear-gradient(180deg, #f7f2e6, #efe6cf);
+      font-weight:700;
+      font-size:13px;
+    }
+
+    .subject-row td:first-child {
+      text-align: left;
+      padding-left: 12px;
+      font-weight:600;
+    }
+
+    .small-cell { font-size:12px; padding:6px; }
+
+    /* Input styling (form fields) */
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      border: 1px dashed #c9b892;
+      padding: 4px 6px;
+      font-size: 13px;
+      background: transparent;
+    }
+
+    .info-block {
+      display:flex;
+      gap:12px;
+      margin-top:12px;
+      font-size:13px;
+    }
+
+    .info-block .box {
+      flex:1;
+      border:1px solid #dfd0a8;
+      padding:10px;
+      background:#fffef9;
+    }
+
+    .result {
+      margin-top:12px;
+      display:flex;
+      justify-content:flex-end;
+      gap:16px;
+      font-size:13px;
+    }
+
+    .btn-area {
+      margin-top:16px;
+      text-align:center;
+    }
+    button {
+      background:#b98f4a;
+      color:white;
+      border:none;
+      padding:8px 14px;
+      border-radius:6px;
+      cursor:pointer;
+    }
+    button:hover { opacity:0.95; transform: translateY(-1px); }
+  </style> 
+</head>
+<body bgcolor="#A2AD9C">
+<center>
+
+    <h1>Bihar School Examination Board Style Marksheet of Patna</h1>
+
+     <a href="Registration Sign.html">Login Submit Form</a>
+
+    <a href="Slide Register Form.html">Sign To Register</a>
+
+    <a href="marksheet 2077.html">Services Slide Form</a>
+
+    <a href="Login Feedback.html">About To Form HTML</a>
+
+    <a href="Form Example.html">Services Register</a>
+
+    <a href="marksheet form.html">Here is Form</a>
+
+    <a href="Produce Form.html">Used Industary</a>
+
+    <a href="marksheet form.html">Submit Marksheet</a>
+
+    <a href="Registration Form 2024.html">Need To Create Form 2024</a>
+
+ <div class="marksheet">
+    <div class="header">
+      <div class="board-title">THE CRECENT SCHOOL OF O/LEVEL EXAMINATIONS</div>
+      <div class="sub-title">MARKS SHEET OF SECONDARY SCHOOL EXAMINATIONS</div>
+      <div style="font-size:12px; margin-top:6px;">ANUAL EXAMINATIONS</div>
+    </div>
+
+    <div class="meta">
+      <div class="left">
+        <div><label class="small">Roll Code:</label> <input type="text" value="02890" /></div>
+        <div><label class="small">Roll No:</label> <input type="text" value="0386" /></div>
+        <div><label class="small">S. No:</label> <input type="text" value="00338463" /></div>
+      </div>
+      <div class="right">
+        <div><label class="small">Name:</label> <input type="text" value="Hamid Haseeb Darbari" /></div>
+        <div><label class="small">DOB:</label> <input type="text" value="15/10/1994" /></div>
+      </div>
+    </div>
+
+    <table class="marks">
+      <thead>
+        <tr>
+          <th rowspan="2">SUBJECT</th>
+          <th colspan="3">LANGUAGE</th>
+          <th colspan="3">SCIENCE</th>
+          <th colspan="3">SOCIAL SCIENCE</th>
+          <th colspan="2">COMPULSORY OPTIONAL</th>
+        </tr>
+        <tr>
+          <th>MIL</th><th>SIL</th><th>MATH</th>
+          <th>PHYS (TH/PR)</th><th></th><th>TOTAL</th>
+          <th>HIS</th><th>CIV</th><th>ED</th>
+          <th>SUBJ</th><th>TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="subject-row">
+          <td>Full Marks</td>
+          <td class="small-cell"><input type="number" value="100" /></td>
+          <td class="small-cell"><input type="number" value="100" /></td>
+          <td class="small-cell"><input type="number" value="100" /></td>
+          <td class="small-cell"><input type="number" value="85" /></td>
+          <td class="small-cell">-</td>
+          <td class="small-cell"><input type="number" value="85" /></td>
+          <td class="small-cell"><input type="number" value="50" /></td>
+          <td class="small-cell"><input type="number" value="50" /></td>
+          <td class="small-cell"><input type="number" value="50" /></td>
+          <td class="small-cell"><input type="number" value="100" /></td>
+          <td class="small-cell"><input type="number" value="100" /></td>
+        </tr>
+
+        <tr class="subject-row">
+          <td>Pass Marks</td>
+          <td class="small-cell">30</td><td class="small-cell">30</td><td class="small-cell">30</td>
+          <td class="small-cell">15</td><td class="small-cell">-</td><td class="small-cell">15</td>
+          <td class="small-cell">15</td><td class="small-cell">15</td><td class="small-cell">15</td>
+          <td class="small-cell">35</td><td class="small-cell">35</td>
+        </tr>
+
+        <tr class="subject-row">
+          <td>Marks Obtained</td>
+          <td class="small-cell"><input type="number" value="51" /></td>
+          <td class="small-cell"><input type="number" value="68" /></td>
+          <td class="small-cell"><input type="number" value="88" /></td>
+          <td class="small-cell"><input type="number" value="25" /></td>
+          <td class="small-cell">-</td>
+          <td class="small-cell"><input type="number" value="23" /></td>
+          <td class="small-cell"><input type="number" value="36" /></td>
+          <td class="small-cell"><input type="number" value="67" /></td>
+          <td class="small-cell"><input type="number" value="33" /></td>
+          <td class="small-cell"><input type="number" value="66" /></td>
+          <td class="small-cell"><input type="number" value="66" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info-block">
+      <div class="box">
+        <strong>School Name:</strong>
+        <div><input type="text" value="M.A.A. High School Jalalabad Munger" /></div>
+      </div>
+      <div class="box">
+        <strong>Aggregate:</strong>
+        <div style="margin-top:8px;"><input type="text" value="439" /></div>
+      </div>
+      <div class="box">
+        <strong>Result:</strong>
+        <div style="margin-top:8px;">1ST DIV: <input type="text" value="420" style="width:80px" /></div>
+      </div>
+    </div>
+
+    <div class="result">
+      <div><strong>Signature:</strong> ____________________</div>
+      <div><strong>Date:</strong> __ / __ / ____</div>
+    </div>
+
+    <div class="btn-area">
+      <button onclick="window.print()">Print / Save as PDF</button>
+    </div>
+  </div>
+
+<head>
+<style>
+    body {
+      background-color: #f2f2e9; /* Page ka background */
+      font-family: "Times New Roman", serif;
+    }
+
+    .marksheet {
+      width: 900px;
+      margin: 20px auto;
+      border: 6px solid #b79a63;
+      padding: 20px;
+      background-color: #fffdf5; /* Marksheet ka andar background */
+    }
+
+    .header {
+      text-align: center;
+      padding: 10px;
+      background-color: #efe6cf; /* header ka background */
+      border-bottom: 2px solid #b79a63;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #b79a63;
+    }
+
+    th {
+      background-color: #f7f2e6; /* table heading background */
+      padding: 8px;
+    }
+
+    td {
+      padding: 6px;
+      text-align: center;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 4px;
+      border: 1px solid #d8c8a2;
+      background-color: #fcfaf0; /* input background */
+    }
+</style>
+</head>
+
+    <h1>THE SMART SCHOOL BOARD OF EXAMINATIONS</h1>
+
+<div class="marksheet">
+    <div class="header">
+      <h2>SINDH GOVERNMENT SCHOOL</h2>
+      <p>MARKS SHEET OF SECONDARY SCHOOL EXAMINATION</p>
+    </div>
+
+    <p><b>Name:</b> <input type="text" class="form-input" value="Hamid Darbari"></p>
+    <p><b>Roll No:</b> <input type="text" class="form-input" value="0386"></p>
+
+    <table>
+      <tr>
+        <th>Subject</th>
+        <th>Full Marks</th>
+        <th>Pass Marks</th>
+        <th>Marks Obtained</th>
+      </tr>
+      <tr>
+        <td>Math</td>
+        <td>100</td>
+        <td>30</td>
+        <td><input type="number" class="form-input" value="88"></td>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>100</td>
+        <td>30</td>
+        <td><input type="number" class="form-input" value="72"></td>
+      </tr>
+    </table>
+        <div class="btn-area">
+            <button onclick="window.print()">Print / Save as PDF</button>
+        </div>
+    </div>
+</center>
+</body>
+</html>
